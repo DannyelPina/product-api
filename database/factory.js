@@ -18,5 +18,6 @@ Factory.blueprint("App/Models/Product", (faker, i, data = {}) => {
 	return {
 		name: faker.string({ length: 80 }),
 		description: faker.string({ length: 200 }),
+		...data,
 	};
 });
