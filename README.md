@@ -1,28 +1,15 @@
-# Adonis API application
+# Product managment
+## Simple REST API with AdonisJS, based on TDD and Migration managment
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+This is a pratical guide to show how to build API with Adonis, based on Test-Driven Development and Migration. On this exemple we used the SQLite database.
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
-
-## Setup
-
-Use the adonis command to install the blueprint
-
+Clone the repo and then run:
 ```bash
-adonis new yardstick --api-only
+npm install
 ```
 
-or manually clone the repo and then run `npm install`.
-
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
+After, run the functional test with the command below:
+```bash
+adonis test functional
 ```
+
